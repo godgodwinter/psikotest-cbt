@@ -5,7 +5,7 @@ const LInk = [
   {
     id: 1,
     name: "home",
-    url: "/",
+    url: "/home",
     label: "home",
     icon: "home",
     active: true,
@@ -14,7 +14,7 @@ const LInk = [
   {
     id: 2,
     name: "About",
-    url: "/about",
+    url: "/home/about",
     label: "about",
     icon: "form",
     active: true,
@@ -80,7 +80,7 @@ const NavBar = () => {
           </div>
           <div className="navbar-end">
             <Link
-              to="/login"
+              to="/home/login"
               activeOptions={{ exact: true }}
               className="capitalize"
             >

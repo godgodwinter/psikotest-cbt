@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-location";
 import {
   Box,
   Flex,
@@ -165,19 +166,21 @@ export default function Login() {
                 }}
               />
             </Stack>
-            <Button
-              fontFamily={"heading"}
-              mt={8}
-              w={"full"}
-              bgGradient="linear(to-r, red.400,pink.400)"
-              color={"white"}
-              _hover={{
-                bgGradient: "linear(to-r, red.400,pink.400)",
-                boxShadow: "xl",
-              }}
-            >
-              Submit
-            </Button>
+            <Link to={"/admin/pages"}>
+              <Button
+                fontFamily={"heading"}
+                mt={8}
+                w={"full"}
+                bgGradient="linear(to-r, red.400,pink.400)"
+                color={"white"}
+                _hover={{
+                  bgGradient: "linear(to-r, red.400,pink.400)",
+                  boxShadow: "xl",
+                }}
+              >
+                Submit
+              </Button>
+            </Link>
           </Box>
           form
         </Stack>

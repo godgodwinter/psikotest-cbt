@@ -5,8 +5,15 @@ import About from "@/components/pages/About";
 import adminRoutes from "./adminRoutes";
 import otherRoutes from "./otherRoutes";
 import Login from "@/components/pages/Login";
+// import LandingIndex from "@/components/pages/LandingIndex";
+import { Navigate } from "@tanstack/react-location";
 const routes = [
   {
+    path: "/",
+    element: <Navigate to="/home" />,
+  },
+  {
+    path: "/home",
     element: <LandingLayout />,
     meta: {
       breadcrumb: () => "Landing Template",

@@ -1,7 +1,7 @@
 import AdminLayout from "@/components/templates/admin/AdminLayout";
 const adminRoutes = [
   {
-    path: "/admin/pages/dashboard",
+    path: "/admin/pages",
     element: <AdminLayout />,
     meta: {
       breadcrumb: () => "Admin",
